@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>cloudTest</artifactId>
@@ -9,15 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>payment8001</artifactId>
-    <packaging>war</packaging>
-
-    <name>payment8001 Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
-
-
-
+    <artifactId>consumer80</artifactId>
 
     <dependencies>
         <!--********* 基础依赖 *********-->
@@ -57,17 +49,6 @@
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
         </dependency>
-        <!--********* 持久层依赖 *********-->
-        <!-- mysql连接 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <!-- mybatis-springboot，集成多个依赖 -->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
 
         <!--********* 工具依赖 *********-->
         <!-- Lombok -->
@@ -87,16 +68,6 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.23</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-dependencies</artifactId>
-            <type>pom</type>
-        </dependency>
 
         <dependency>
             <groupId>org.example</groupId>
@@ -105,10 +76,10 @@
             <scope>compile</scope>
         </dependency>
 
+
     </dependencies>
 
     <build>
-        <finalName>payment8001</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
@@ -143,4 +114,6 @@
             </plugins>
         </pluginManagement>
     </build>
+
+
 </project>
